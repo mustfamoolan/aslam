@@ -1,0 +1,94 @@
+/* تنسيق التنبيهات */
+.notification-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 0.6rem;
+    padding: 0.2rem 0.4rem;
+}
+
+.notifications-dropdown {
+    width: 320px;
+    padding: 0;
+}
+
+.notifications-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+
+.notifications-body {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.notification-item {
+    display: flex;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #f0f0f0;
+    transition: background-color 0.2s;
+}
+
+.notification-item:hover {
+    background-color: #f8f9fa;
+}
+
+.notification-item.unread {
+    background-color: #f0f7ff;
+}
+
+.notification-icon {
+    margin-right: 0.75rem;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.notification-icon.info {
+    background-color: #17a2b8;
+}
+
+.notification-icon.warning {
+    background-color: #ffc107;
+}
+
+.notification-icon.danger {
+    background-color: #dc3545;
+}
+
+.notification-content {
+    flex: 1;
+}
+
+.notification-title {
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+
+.notification-text {
+    font-size: 0.85rem;
+    color: #6c757d;
+    margin-bottom: 0.25rem;
+}
+
+.notification-time {
+    font-size: 0.75rem;
+    color: #adb5bd;
+}
+
+.mark-all-read {
+    font-size: 0.75rem;
+    padding: 0;
+    color: #007bff;
+}
+
+.mark-all-read:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
